@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>Rapidinho Fretes</title>
+</head>
+
+<body>
+
+    <h1>Bem-vindo ao Rapidinho Fretes</h1>
+
+    <p>Escolha uma das opções abaixo:</p>
+
+    <button onclick="window.location.href='{% static 'financeiro.html' %}'">
+        Financeiro
+    </button>
+
+    <a href="{% url 'cadastro' %}">
+        Cadastro
+    </a>
+
+</body>
+</html>

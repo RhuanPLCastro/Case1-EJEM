@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Cadastro - Rapidinho Fretes</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro</h1>
+        <p>Faça seu cadastro no Rapidinho Fretes.</p>
+        <div class="cadastro-form">  
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Senha">
+        <button onclick="window.location.href='{% static 'pagina.html' %}'">Cadastrar</button>
+        </div>
+
+        <a href="{% url 'home' %}">Voltar para o início</a>
+    </div>
+
+</body>
+</html>
